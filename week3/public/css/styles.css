@@ -1,0 +1,58 @@
+.navbar-size {
+    width: 95%;
+    margin: 0 auto;
+}
+
+nav .brand-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main-body {
+    background-color: #5d4037;
+    color: white;
+    min-height: calc(100vh - 64px);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.materialboxed-image {
+    margin: 0 auto;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.click-me-button {
+    background-color: #8d6e63;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-image img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-reveal {
+    color: black;
+}
+
+.card-reveal .card-title,
+.card-reveal p {
+    color: black;
+}
+
+.card-content {
+    color: black;
+}
+
+.card-title {
+    font-weight: bold;
+}
