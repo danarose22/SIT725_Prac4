@@ -1,10 +1,8 @@
-
 const clickMe = () => {
     alert("Welcome to Story Explorer!");
 };
 
 
-// Create cards dynamically
 const addCards = (items) => {
 
     items.forEach(item => {
@@ -69,11 +67,13 @@ const getBooks = () => {
 
         console.log("Books received from API:", response);
 
-        addCards(response);
+        // API returns { statusCode, data, message }
+        addCards(response.data);
 
-    }).fail(() => {
+    }).fail((error) => {
 
         console.log("Unable to retrieve books.");
+        console.error(error);
 
     });
 
@@ -83,7 +83,7 @@ const getBooks = () => {
 // When page is ready
 $(document).ready(function () {
 
-    // Initialise Materialize image
+   
     $('.materialboxed').materialbox();
 
     // Button click
